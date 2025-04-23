@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+body {
+    padding: 0;
+    background: radial-gradient(ellipse at center, #000000 0%, #1a1a1a 100%);
+    color: #fff;
+    font-family: 'orbitron', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    overflow: hidden;
+    
+}
+
+.theater {
+    border: 9px solid rgba(0, 0, 255, 0.468);
+    border-radius: 13px;
+    box-shadow: 0 0 60px rgba(0, 0, 255, 0.468), 0 0 20px #fff inset;
+    background-color: #111;
+    text-align: center;
+    /* padding-bottom: 105px; */margin-top: 80px;
+    padding-bottom: 40px;
+  
+    
+}
+
+.theater h1 {
+    font-family: 'Staatliches', cursive;
+    font-size: 2.5rem;
+    color: #ffe81f;
+    margin-top: 0;
+}
+
+.video-container {
+    position: relative;
+    border: 4px solid #cccccc73;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(225, 225, 225, 0.473);
+    width: 600px;
+    height: 300px;
+}
+
+video {
+    width: 100%;
+    height: 300px;
+    display: block;
+}
+
+.button {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+button {
+    margin-top: 30px;
+    background-color: #ffe81f;
+    border: none;
+    padding: 10px 20px;
+    color: #000;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #a39623c7;
+    box-shadow: 2px 2px 3px #f9e000;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.blinking-lights {
+    display: flex;
+    justify-content: space-between;
+}
+
+.light {
+    width: 10px;
+    height: 10px;
+    background-color: #e50914;
+    border-radius: 50%;
+    animation: blink 2s infinite;
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.marquee-text {
+    font-size: 2rem;
+    font-family: 'Staatliches', cursive;
+    color: #ffe81f;
+    white-space: nowrap;
+    display: inline-block;
+    animation: scrollText 10s linear infinite;
+    /* padding: 20px; */
+    margin-top: 10px;
+}
+@keyframes scrollText {
+    0% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
